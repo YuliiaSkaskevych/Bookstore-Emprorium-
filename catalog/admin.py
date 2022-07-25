@@ -15,7 +15,11 @@ class PublisherInlineModelAdmin(admin.TabularInline):
     model = Publisher
 
 
-@admin.register(Author)
+class StoreInlineModelAdmin(admin.TabularInline):
+    model = Store
+
+
+# @admin.register(Author)
 class AuthorModelAdmin(admin.ModelAdmin):
     list_display = ["name", "surname", "country"]
     fields = ['name', 'surname', "country"]
@@ -24,7 +28,7 @@ class AuthorModelAdmin(admin.ModelAdmin):
     inlines = [AuthorInlineModelAdmin, BookInlineModelAdmin]
 
 
-@admin.register(Book)
+# @admin.register(Book)
 class BookModelAdmin(admin.ModelAdmin):
     list_display = ['title', 'price', 'author', 'publisher']
     fields = ['title', 'price', 'author', 'publisher', ('price', 'pages', 'pubdate')]
@@ -36,7 +40,7 @@ class BookModelAdmin(admin.ModelAdmin):
     inlines = [AuthorInlineModelAdmin, PublisherInlineModelAdmin]
 
 
-@admin.register(Store)
+# @admin.register(Store)
 class StoreModelAdmin(admin.ModelAdmin):
     list_display = ["name", "address"]
     fields = ['name', 'address']
@@ -44,3 +48,18 @@ class StoreModelAdmin(admin.ModelAdmin):
     date_hierarchy = "name"
     inlines = [PublisherInlineModelAdmin, BookInlineModelAdmin]
     filter_horizontal = ["address"]
+
+
+# @admin.register(Publisher)
+class PublisherModelAdmin(admin.ModelAdmin):
+    list_display = ["name", "store"]
+    fields = ['name', "year", 'store']
+    search_fields = ["name", "store"]
+    date_hierarchy = "year"
+    inlines = [StoreInlineModelAdmin, BookInlineModelAdmin]
+
+
+# admin.site.register(Author)
+# admin.site.register(Book)
+# admin.site.register(Store)
+# admin.site.register(Publisher)

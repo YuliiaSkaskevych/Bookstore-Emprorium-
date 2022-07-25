@@ -5,11 +5,16 @@
     <title>Books</title>
 </head>
 <body>
-   <h1>List of books</h1>
+    <h1>Information of price</h1>
+    <ul>Average price of books: {{ avg_price.price__avg}}</ul>
+    <li>Max price of books: {{ max_price.price__max }}</li>
+   <h2>List of books</h2>
    <ul>
         {% for obj in books %}
-            <li><a href="{% url 'catalog:books' pk=obj.pk %}">{{ obj }}</a></li>
+            <li><a href="{% url 'catalog:books_info' id=obj.id %}">{{ obj.id }} {{ obj.title }} {{ obj.author }}</a></li>
         {% endfor %}
     </ul>
+
+
 </body>
 </html>
