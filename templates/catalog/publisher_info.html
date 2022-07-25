@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Publisher information</title>
+</head>
+<body>
+<h1>Information about publisher:</h1>
+    <ul>ID: {{ id }}</ul>
+    <ul>Name: {{ name }}</ul>
+    <ul>Year: {{ year }}</ul>
+<ul><a href="{% url 'catalog:stores_info' id=store.id %}">Store: {{ store.name }}</a></ul>
+    <ul>Books:</ul>
+        {% for obj in books %}
+            <li><a href="{% url 'catalog:books_info' id=obj.id %}">{{ obj.title }}</a></li>
+    {% endfor %}
+</body>
+</html>

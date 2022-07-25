@@ -5,10 +5,12 @@
     <title>Authors</title>
 </head>
 <body>
-   <h1>List of authors</h1>
+    <h1>Count of authors:</h1>
+    <li>{{ count.count }}</li>
+   <h2>List of authors</h2>
    <ul>
         {% for obj in authors %}
-            <li><a href="{% url 'catalog:authors' pk=obj.pk %}">{{ obj }}</a></li>
+            <li><a href="{% url 'catalog:author_info' id=obj.id %}">{{ obj.name }} {{ obj.surname }} {{ obj.country }}</a></li>
         {% endfor %}
     </ul>
 </body>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Store information</title>
+</head>
+<body>
+<h1>Information about store:</h1>
+    <ul>ID: {{ id }}</ul>
+    <ul>Name: {{ name }}</ul>
+    <ul>Address: {{ address }}</ul>
+    <ul>Publisher: {{ publisher }}</ul>
+    <ul>Books:</ul>
+        {% for obj in books %}
+            <li><a href="{% url 'catalog:books_info' id=obj.id %}">{{ obj.title }}</a></li>
+    {% endfor %}
+</body>
+</html>

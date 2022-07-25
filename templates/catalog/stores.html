@@ -8,7 +8,10 @@
    <h1>List of stores</h1>
    <ul>
         {% for obj in stores %}
-            <li><a href="{% url 'catalog:stores' pk=obj.pk %}">{{ obj }}</a></li>
+            <li><a href="{% url 'catalog:stores_info' id=obj.id %}">{{ obj.name }}</a></li>
+            <ul>Address: {{ obj.address }}</ul>
+            <ul>Publisher: {{ obj.publisher }}</ul>
+            <ul>Count of books: {{ obj.count.count }}</ul>
         {% endfor %}
     </ul>
 </body>

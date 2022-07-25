@@ -5,17 +5,11 @@
     <title>Bookstore</title>
 </head>
 <body>
-
-{% extends "catalog/index.html" %}
-
-{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_header|default:_('Django administration') }}
-
-{% endblock %}
-
-{% block branding %}
-<h1 id="site-name"><a href="{% url 'catalog:index' %}">Welcome to Discworld Emprorium!</a></h1>
-{% endblock %}
-
-{% block nav-global %}{% endblock %}
+    <h1>Welcome to bookstore "Emprorium"!</h1>
+    <h2>To the list of:</h2>
+    <p><a href="{% url 'catalog:books' %}">Books</a></p>
+    <p><a href="{% url 'catalog:authors' %}">Authors</a></p>
+    <p><a href="{% url 'catalog:stores' %}">Stores</a></p>
+    <p><a href="{% url 'catalog:publishers' %}">Publishers</a></p>
 </body>
 </html>
