@@ -5,6 +5,8 @@
     <title>Book information</title>
 </head>
 <body>
+<ul><a href="{% url 'catalog:index' %}">Back to main menu</a></ul>
+<ul><a href="{% url 'catalog:books' %}">Back to the list of books</a></ul>
 <h1>Information about book:</h1>
     <ul>ID: {{ id }}</ul>
     <ul>Title: {{ title }}</ul>

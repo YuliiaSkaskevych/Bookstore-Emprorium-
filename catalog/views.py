@@ -1,22 +1,24 @@
+from django.db.models import Avg, Count, Max, Min
 from django.shortcuts import render
-from django.db.models import Count, Avg, Max
+
 
 from .models import Author, Book, Publisher, Store
 
 
 def index(request):
+    """Main menu"""
     return render(request, 'catalog/index.html')
 
 
 def books_list(request):
     """List of all books with authors"""
-    avg_price = Book.objects.all().aggregate(Avg('price'))
-    max_price = Book.objects.all().aggregate(Max('price'))
+    info = Book.objects.all().aggregate(Avg('price'), Max('price'), Min('price'), Count('title'), Max('pages'),
+                                        Min('pages'))
     book_list = Book.objects.select_related('author').all()
     books = []
     for book in book_list:
         books.append({'id': book.id, 'title': book.title, 'author': book.author.surname})
-    return render(request, 'catalog/books.html', {'books': books, 'avg_price': avg_price, 'max_price': max_price, })
+    return render(request, 'catalog/books.html', {'books': books, 'info': info})
 
 
 def book_info(request, id):
@@ -41,9 +43,8 @@ def book_info(request, id):
 
 def authors_list(request):
     """List of all authors"""
-    authors = Author.objects.all()
-    count = Author.objects.all().annotate(count=Count('surname'))
-    return render(request, 'catalog/authors.html', {'authors': authors, 'count': count, })
+    authors = Author.objects.all().annotate(count=Count('surname'))
+    return render(request, 'catalog/authors.html', {'authors': authors, })
 
 
 def author_info(request, id):
@@ -67,13 +68,16 @@ def stores_list(request):
     store_list = Store.objects.select_related('publisher').all()
     stores = []
     for store in store_list:
-        count = Book.objects.prefetch_related('publisher__store').filter(publisher__name=store.publisher.name).annotate\
-            (count=Count('title'))
-        stores.append({'id': store.id, 'name': store.name, 'address': store.address, 'publisher': store.publisher.name, 'count': count})
+        count = Book.objects.prefetch_related('publisher__store').filter(publisher__name=store.publisher.name).\
+            annotate(count=Count('title'))
+
+        stores.append({'id': store.id, 'name': store.name, 'address': store.address, 'publisher': store.publisher.name,
+                       'count': count})
     return render(request, 'catalog/stores.html', {'stores': stores, })
 
 
 def stores_info(request, id):
+    """Information about one store"""
     store = Store.objects.prefetch_related('publisher').get(id=id)
     books = Book.objects.prefetch_related('publisher').filter(publisher__name=store.publisher.name)
     return render(request,
@@ -92,8 +96,10 @@ def publishers_list(request):
     publisher_list = Publisher.objects.select_related('store').all()
     pub_list = []
     for publisher in publisher_list:
+        books = Book.objects.prefetch_related('publisher').filter(publisher__name=publisher.name).\
+            aggregate(Avg('price'))
         pub_list.append(
-            {'name': publisher.name, 'store': publisher.store.name, 'year': publisher.year, 'pk': publisher.pk})
+            {'name': publisher.name, 'store': publisher.store.name, 'pk': publisher.pk, 'books': books})
     return render(request, 'catalog/publishers.html', {'pub_list': pub_list, })
 
 

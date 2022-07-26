@@ -1,668 +1,909 @@
 [
 {
-               "model": "catalog.author",
-               "pk": 1,
-               "fields": {
-                              "name": "Terry",
-                              "surname": "Pratchett",
-                              "country": "The UK"
-               }
+    "model": "catalog.author",
+    "pk": 1,
+    "fields": {
+        "name": "Terry",
+        "surname": "Pratchett",
+        "country": "The UK"
+    }
 },
 {
-               "model": "catalog.author",
-               "pk": 2,
-               "fields": {
-                              "name": "Neil",
-                              "surname": "Gaiman",
-                              "country": "Great Britain"
-               }
+    "model": "catalog.author",
+    "pk": 2,
+    "fields": {
+        "name": "Neil",
+        "surname": "Gaiman",
+        "country": "Great Britain"
+    }
 },
 {
-               "model": "catalog.author",
-               "pk": 3,
-               "fields": {
-                              "name": "Tess",
-                              "surname": "Geritsen",
-                              "country": "The USA"
-               }
+    "model": "catalog.author",
+    "pk": 3,
+    "fields": {
+        "name": "Tess",
+        "surname": "Geritsen",
+        "country": "The USA"
+    }
 },
 {
-               "model": "catalog.author",
-               "pk": 4,
-               "fields": {
-                              "name": "Garcia",
-                              "surname": "Markes",
-                              "country": "Spain"
-               }
+    "model": "catalog.author",
+    "pk": 4,
+    "fields": {
+        "name": "Garcia",
+        "surname": "Markes",
+        "country": "Spain"
+    }
 },
 {
-               "model": "catalog.author",
-               "pk": 5,
-               "fields": {
-                              "name": "Luko",
-                              "surname": "Dashwar",
-                              "country": "Ukrain"
-               }
+    "model": "catalog.author",
+    "pk": 5,
+    "fields": {
+        "name": "Luko",
+        "surname": "Dashwar",
+        "country": "Ukraine"
+    }
 },
 {
-               "model": "catalog.author",
-               "pk": 6,
-               "fields": {
-                              "name": "Dante",
-                              "surname": "Aligiery",
-                              "country": "Italy"
-               }
+    "model": "catalog.author",
+    "pk": 6,
+    "fields": {
+        "name": "Dante",
+        "surname": "Aligiery",
+        "country": "Italy"
+    }
 },
 {
-               "model": "catalog.author",
-               "pk": 7,
-               "fields": {
-                              "name": "Ivan",
-                              "surname": "Levytskyi",
-                              "country": "Ukraine"
-               }
+    "model": "catalog.author",
+    "pk": 7,
+    "fields": {
+        "name": "Ivan",
+        "surname": "Levytskyi",
+        "country": "Ukraine"
+    }
 },
 {
-               "model": "catalog.author",
-               "pk": 8,
-               "fields": {
-                              "name": "Steven",
-                              "surname": "King",
-                              "country": "The USA"
-               }
+    "model": "catalog.author",
+    "pk": 8,
+    "fields": {
+        "name": "Steven",
+        "surname": "King",
+        "country": "The USA"
+    }
 },
 {
-               "model": "catalog.author",
-               "pk": 9,
-               "fields": {
-                              "name": "Haruko",
-                              "surname": "Murakami",
-                              "country": "Japan"
-               }
+    "model": "catalog.author",
+    "pk": 9,
+    "fields": {
+        "name": "Haruko",
+        "surname": "Murakami",
+        "country": "Japan"
+    }
 },
 {
-               "model": "catalog.author",
-               "pk": 10,
-               "fields": {
-                              "name": "Johan",
-                              "surname": "Gete",
-                              "country": "Germany"
-               }
+    "model": "catalog.author",
+    "pk": 10,
+    "fields": {
+        "name": "Johan",
+        "surname": "Gete",
+        "country": "Germany"
+    }
 },
 {
-               "model": "catalog.store",
-               "pk": 1,
-               "fields": {
-                              "name": "Staryi Lev",
-                              "address": "Kyiv, Arsenalna 3"
-               }
+    "model": "catalog.store",
+    "pk": 1,
+    "fields": {
+        "name": "Staryi Lev",
+        "address": "Kyiv, Arsenalna 3"
+    }
 },
 {
-               "model": "catalog.store",
-               "pk": 2,
-               "fields": {
-                              "name": "Discworld Emprorium",
-                              "address": "Kyiv, Obolon 14"
-               }
+    "model": "catalog.store",
+    "pk": 2,
+    "fields": {
+        "name": "Discworld Emprorium",
+        "address": "Kyiv, Obolon 14"
+    }
 },
 {
-               "model": "catalog.store",
-               "pk": 3,
-               "fields": {
-                              "name": "BookYe",
-                              "address": "Lviv, Square 15"
-               }
+    "model": "catalog.store",
+    "pk": 3,
+    "fields": {
+        "name": "BookYe",
+        "address": "Lviv, Square 15"
+    }
 },
 {
-               "model": "catalog.store",
-               "pk": 4,
-               "fields": {
-                              "name": "Ababalagala",
-                              "address": "Kharkiv, Tower square 18"
-               }
+    "model": "catalog.store",
+    "pk": 4,
+    "fields": {
+        "name": "Ababalagala",
+        "address": "Kharkiv, Tower square 18"
+    }
 },
 {
-               "model": "catalog.store",
-               "pk": 5,
-               "fields": {
-                              "name": "Yakaboo",
-                              "address": "Odesa, Sea square 21"
-               }
+    "model": "catalog.store",
+    "pk": 5,
+    "fields": {
+        "name": "Yakaboo",
+        "address": "Odesa, Sea square 21"
+    }
 },
 {
-               "model": "catalog.publisher",
-               "pk": 1,
-               "fields": {
-                              "name": "Staryi Lev",
-                              "year": 1996
-               }
+    "model": "catalog.store",
+    "pk": 6,
+    "fields": {
+        "name": "Zakapelok",
+        "address": "Kropyvnytskyi, River 11"
+    }
 },
 {
-               "model": "catalog.publisher",
-               "pk": 2,
-               "fields": {
-                              "name": "Emprorium",
-                              "year": 2015
-               }
+    "model": "catalog.store",
+    "pk": 7,
+    "fields": {
+        "name": "Berlinskyi",
+        "address": "Mykolaiv, Stroiteley 14 "
+    }
 },
 {
-               "model": "catalog.publisher",
-               "pk": 3,
-               "fields": {
-                              "name": "Bookstore",
-                              "year": 1997
-               }
+    "model": "catalog.store",
+    "pk": 8,
+    "fields": {
+        "name": "Verbova",
+        "address": "Kherson, Rastishka 5"
+    }
 },
 {
-               "model": "catalog.publisher",
-               "pk": 4,
-               "fields": {
-                              "name": "Knyga",
-                              "year": 2003
-               }
+    "model": "catalog.store",
+    "pk": 9,
+    "fields": {
+        "name": "Kudriavska",
+        "address": "Chernigiv, Nishyn 6"
+    }
 },
 {
-               "model": "catalog.publisher",
-               "pk": 5,
-               "fields": {
-                              "name": "Yakabooooo1",
-                              "year": 2000
-               }
+    "model": "catalog.store",
+    "pk": 10,
+    "fields": {
+        "name": "Arta",
+        "address": "Kyiv, Khreschatik 10"
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 1,
-               "fields": {
-                              "title": "Equal rites",
-                              "pages": 340,
-                              "price": "275.80",
-                              "author": 1,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             1
-                              ]
-               }
+    "model": "catalog.store",
+    "pk": 11,
+    "fields": {
+        "name": "Bison",
+        "address": "Uzhhorod, Cherna 7"
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 2,
-               "fields": {
-                              "title": "Lords and ladies",
-                              "pages": 450,
-                              "price": "265.00",
-                              "author": 1,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             1,
-                                             4
-                              ]
-               }
+    "model": "catalog.store",
+    "pk": 12,
+    "fields": {
+        "name": "Knigoo",
+        "address": "Zaporizhia, Medical 11"
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 3,
-               "fields": {
-                              "title": "Sandman",
-                              "pages": 260,
-                              "price": "235.90",
-                              "author": 2,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             2,
-                                             5
-                              ]
-               }
+    "model": "catalog.store",
+    "pk": 13,
+    "fields": {
+        "name": "Booket",
+        "address": "Odesa, Straight 15"
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 4,
-               "fields": {
-                              "title": "The surgeon",
-                              "pages": 367,
-                              "price": "345.75",
-                              "author": 3,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             3,
-                                             5
-                              ]
-               }
+    "model": "catalog.store",
+    "pk": 14,
+    "fields": {
+        "name": "Charms",
+        "address": "Mykolaiv, Riverport 19"
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 5,
-               "fields": {
-                              "title": "The assistent",
-                              "pages": 432,
-                              "price": "295.60",
-                              "author": 3,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             2
-                              ]
-               }
+    "model": "catalog.store",
+    "pk": 15,
+    "fields": {
+        "name": "Gramota",
+        "address": "Lviv, Blacktower 12"
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 6,
-               "fields": {
-                              "title": "100 year of solitude",
-                              "pages": 278,
-                              "price": "254.00",
-                              "author": 4,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             2
-                              ]
-               }
+    "model": "catalog.store",
+    "pk": 16,
+    "fields": {
+        "name": "Avatar books",
+        "address": "Kyiv, Pozniaky 13"
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 7,
-               "fields": {
-                              "title": "The village is not people",
-                              "pages": 398,
-                              "price": "198.70",
-                              "author": 5,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             1
-                              ]
-               }
+    "model": "catalog.store",
+    "pk": 17,
+    "fields": {
+        "name": "Knigoland",
+        "address": "Kharkiv, Bilousova 20"
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 8,
-               "fields": {
-                              "title": "Smell of meat",
-                              "pages": 245,
-                              "price": "274.20",
-                              "author": 5,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             3
-                              ]
-               }
+    "model": "catalog.store",
+    "pk": 18,
+    "fields": {
+        "name": "Biblioglobus",
+        "address": "Kyiv, Alley 12"
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 9,
-               "fields": {
-                              "title": "The divine comedy",
-                              "pages": 165,
-                              "price": "345.90",
-                              "author": 6,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             3
-                              ]
-               }
+    "model": "catalog.publisher",
+    "pk": 1,
+    "fields": {
+        "name": "Staryi Lev",
+        "year": 1996
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 10,
-               "fields": {
-                              "title": "Kaidasheva family",
-                              "pages": 232,
-                              "price": "215.90",
-                              "author": 7,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             3
-                              ]
-               }
+    "model": "catalog.publisher",
+    "pk": 2,
+    "fields": {
+        "name": "Emprorium",
+        "year": 2015
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 11,
-               "fields": {
-                              "title": "It",
-                              "pages": 789,
-                              "price": "486.70",
-                              "author": 8,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             5
-                              ]
-               }
+    "model": "catalog.publisher",
+    "pk": 3,
+    "fields": {
+        "name": "Bookstore",
+        "year": 1997
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 12,
-               "fields": {
-                              "title": "Mr Mersedes",
-                              "pages": 395,
-                              "price": "387.40",
-                              "author": 8,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             3
-                              ]
-               }
+    "model": "catalog.publisher",
+    "pk": 4,
+    "fields": {
+        "name": "Knyga",
+        "year": 2003
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 13,
-               "fields": {
-                              "title": "The dark tower",
-                              "pages": 275,
-                              "price": "258.60",
-                              "author": 8,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             4
-                              ]
-               }
+    "model": "catalog.publisher",
+    "pk": 5,
+    "fields": {
+        "name": "Yakabooooo1",
+        "year": 2000
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 14,
-               "fields": {
-                              "title": "Green mile",
-                              "pages": 420,
-                              "price": "375.20",
-                              "author": 8,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             3
-                              ]
-               }
+    "model": "catalog.publisher",
+    "pk": 6,
+    "fields": {
+        "name": "Buklya",
+        "year": 1785
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 15,
-               "fields": {
-                              "title": "Simle Economy",
-                              "pages": 249,
-                              "price": "453.10",
-                              "author": 9,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             2
-                              ]
-               }
+    "model": "catalog.publisher",
+    "pk": 7,
+    "fields": {
+        "name": "ASSA",
+        "year": 1967
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 16,
-               "fields": {
-                              "title": "Theorema and life",
-                              "pages": 310,
-                              "price": "298.50",
-                              "author": 9,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             1
-                              ]
-               }
+    "model": "catalog.publisher",
+    "pk": 8,
+    "fields": {
+        "name": "Astra",
+        "year": 1988
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 17,
-               "fields": {
-                              "title": "Faust",
-                              "pages": 327,
-                              "price": "329.80",
-                              "author": 10,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             1
-                              ]
-               }
+    "model": "catalog.publisher",
+    "pk": 9,
+    "fields": {
+        "name": "Vivat",
+        "year": 2004
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 18,
-               "fields": {
-                              "title": "Good Omens",
-                              "pages": 346,
-                              "price": "489.20",
-                              "author": 2,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             5
-                              ]
-               }
+    "model": "catalog.publisher",
+    "pk": 10,
+    "fields": {
+        "name": "Komubuk",
+        "year": 2013
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 19,
-               "fields": {
-                              "title": "Neverwhere",
-                              "pages": 346,
-                              "price": "235.80",
-                              "author": 2,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             2
-                              ]
-               }
+    "model": "catalog.publisher",
+    "pk": 11,
+    "fields": {
+        "name": "Nash format",
+        "year": 2007
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 20,
-               "fields": {
-                              "title": "The book of death",
-                              "pages": 146,
-                              "price": "256.30",
-                              "author": 2,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             4
-                              ]
-               }
+    "model": "catalog.publisher",
+    "pk": 12,
+    "fields": {
+        "name": "Portal",
+        "year": 2008
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 21,
-               "fields": {
-                              "title": "Curse of the Nun",
-                              "pages": 285,
-                              "price": "378.10",
-                              "author": 3,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             3
-                              ]
-               }
+    "model": "catalog.publisher",
+    "pk": 13,
+    "fields": {
+        "name": "Piramida",
+        "year": 1999
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 22,
-               "fields": {
-                              "title": "Mort",
-                              "pages": 451,
-                              "price": "374.10",
-                              "author": 1,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             1
-                              ]
-               }
+    "model": "catalog.publisher",
+    "pk": 14,
+    "fields": {
+        "name": "Teza",
+        "year": 1999
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 23,
-               "fields": {
-                              "title": "Carpe jugulum",
-                              "pages": 364,
-                              "price": "478.80",
-                              "author": 1,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             5
-                              ]
-               }
+    "model": "catalog.publisher",
+    "pk": 15,
+    "fields": {
+        "name": "Choven",
+        "year": 2001
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 24,
-               "fields": {
-                              "title": "Wyrd systers",
-                              "pages": 489,
-                              "price": "284.50",
-                              "author": 1,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             3,
-                                             5
-                              ]
-               }
+    "model": "catalog.publisher",
+    "pk": 16,
+    "fields": {
+        "name": "Ranok",
+        "year": 2006
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 25,
-               "fields": {
-                              "title": "Witches abroad",
-                              "pages": 543,
-                              "price": "312.54",
-                              "author": 1,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             4
-                              ]
-               }
+    "model": "catalog.publisher",
+    "pk": 17,
+    "fields": {
+        "name": "Osnova",
+        "year": 2011
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 26,
-               "fields": {
-                              "title": "Mascarade",
-                              "pages": 319,
-                              "price": "245.89",
-                              "author": 1,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             2
-                              ]
-               }
+    "model": "catalog.publisher",
+    "pk": 18,
+    "fields": {
+        "name": "Dnipro",
+        "year": 2005
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 27,
-               "fields": {
-                              "title": "Interesting time",
-                              "pages": 348,
-                              "price": "315.79",
-                              "author": 1,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             3
-                              ]
-               }
+    "model": "catalog.book",
+    "pk": 1,
+    "fields": {
+        "title": "Equal rites",
+        "pages": 340,
+        "price": "275.80",
+        "author": 1,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            1,
+            17
+        ]
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 28,
-               "fields": {
-                              "title": "The last hero",
-                              "pages": 412,
-                              "price": "546.80",
-                              "author": 1,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             1
-                              ]
-               }
+    "model": "catalog.book",
+    "pk": 2,
+    "fields": {
+        "title": "Lords and ladies",
+        "pages": 450,
+        "price": "265.00",
+        "author": 1,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            1,
+            4,
+            11
+        ]
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 29,
-               "fields": {
-                              "title": "Nation",
-                              "pages": 439,
-                              "price": "476.10",
-                              "author": 1,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             2
-                              ]
-               }
+    "model": "catalog.book",
+    "pk": 3,
+    "fields": {
+        "title": "Sandman",
+        "pages": 260,
+        "price": "235.90",
+        "author": 2,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            2,
+            5,
+            17
+        ]
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 30,
-               "fields": {
-                              "title": "Guard!Guard!",
-                              "pages": 576,
-                              "price": "517.40",
-                              "author": 1,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             2,
-                                             4
-                              ]
-               }
+    "model": "catalog.book",
+    "pk": 4,
+    "fields": {
+        "title": "The surgeon",
+        "pages": 367,
+        "price": "345.75",
+        "author": 3,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            3,
+            5,
+            9,
+            18
+        ]
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 31,
-               "fields": {
-                              "title": "The theaph of time",
-                              "pages": 419,
-                              "price": "431.56",
-                              "author": 1,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             1
-                              ]
-               }
+    "model": "catalog.book",
+    "pk": 5,
+    "fields": {
+        "title": "The assistent",
+        "pages": 432,
+        "price": "295.60",
+        "author": 3,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            2,
+            18
+        ]
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 32,
-               "fields": {
-                              "title": "Snuff",
-                              "pages": 319,
-                              "price": "214.74",
-                              "author": 1,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             5
-                              ]
-               }
+    "model": "catalog.book",
+    "pk": 6,
+    "fields": {
+        "title": "100 year of solitude",
+        "pages": 278,
+        "price": "254.00",
+        "author": 4,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            2,
+            18
+        ]
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 33,
-               "fields": {
-                              "title": "The truth",
-                              "pages": 436,
-                              "price": "213.70",
-                              "author": 1,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             3
-                              ]
-               }
+    "model": "catalog.book",
+    "pk": 7,
+    "fields": {
+        "title": "The village is not people",
+        "pages": 398,
+        "price": "198.70",
+        "author": 5,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            1,
+            17
+        ]
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 34,
-               "fields": {
-                              "title": "Moving pictures",
-                              "pages": 348,
-                              "price": "214.70",
-                              "author": 1,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             2,
-                                             3
-                              ]
-               }
+    "model": "catalog.book",
+    "pk": 8,
+    "fields": {
+        "title": "Smell of meat",
+        "pages": 245,
+        "price": "274.20",
+        "author": 5,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            3,
+            16
+        ]
+    }
 },
 {
-               "model": "catalog.book",
-               "pk": 35,
-               "fields": {
-                              "title": "Do steaming",
-                              "pages": 417,
-                              "price": "345.70",
-                              "author": 1,
-                              "pubdate": "2022-07-23",
-                              "publisher": [
-                                             5
-                              ]
-               }
+    "model": "catalog.book",
+    "pk": 9,
+    "fields": {
+        "title": "The divine comedy",
+        "pages": 165,
+        "price": "345.90",
+        "author": 6,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            3,
+            16
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 10,
+    "fields": {
+        "title": "Kaidasheva family",
+        "pages": 232,
+        "price": "215.90",
+        "author": 7,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            3,
+            15
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 11,
+    "fields": {
+        "title": "It",
+        "pages": 789,
+        "price": "486.70",
+        "author": 8,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            5,
+            15
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 12,
+    "fields": {
+        "title": "Mr Mersedes",
+        "pages": 395,
+        "price": "387.40",
+        "author": 8,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            3,
+            15
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 13,
+    "fields": {
+        "title": "The dark tower",
+        "pages": 275,
+        "price": "258.60",
+        "author": 8,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            4,
+            14
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 14,
+    "fields": {
+        "title": "Green mile",
+        "pages": 420,
+        "price": "375.20",
+        "author": 8,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            3,
+            7,
+            10
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 15,
+    "fields": {
+        "title": "Simle Economy",
+        "pages": 249,
+        "price": "453.10",
+        "author": 9,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            2
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 16,
+    "fields": {
+        "title": "Theorema and life",
+        "pages": 310,
+        "price": "298.50",
+        "author": 9,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            1,
+            11,
+            13
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 17,
+    "fields": {
+        "title": "Faust",
+        "pages": 327,
+        "price": "329.80",
+        "author": 10,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            1,
+            12
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 18,
+    "fields": {
+        "title": "Good Omens",
+        "pages": 346,
+        "price": "489.20",
+        "author": 2,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            5,
+            11,
+            12
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 19,
+    "fields": {
+        "title": "Neverwhere",
+        "pages": 346,
+        "price": "235.80",
+        "author": 2,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            2,
+            13
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 20,
+    "fields": {
+        "title": "The book of death",
+        "pages": 146,
+        "price": "256.30",
+        "author": 2,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            4
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 21,
+    "fields": {
+        "title": "Curse of the Nun",
+        "pages": 285,
+        "price": "378.10",
+        "author": 3,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            3,
+            6
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 22,
+    "fields": {
+        "title": "Mort",
+        "pages": 451,
+        "price": "374.10",
+        "author": 1,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            1
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 23,
+    "fields": {
+        "title": "Carpe jugulum",
+        "pages": 364,
+        "price": "478.80",
+        "author": 1,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            5,
+            6,
+            14
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 24,
+    "fields": {
+        "title": "Wyrd systers",
+        "pages": 489,
+        "price": "284.50",
+        "author": 1,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            3,
+            5,
+            7
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 25,
+    "fields": {
+        "title": "Witches abroad",
+        "pages": 543,
+        "price": "312.54",
+        "author": 1,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            4,
+            15
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 26,
+    "fields": {
+        "title": "Mascarade",
+        "pages": 319,
+        "price": "245.89",
+        "author": 1,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            2,
+            8
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 27,
+    "fields": {
+        "title": "Interesting time",
+        "pages": 348,
+        "price": "315.79",
+        "author": 1,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            3,
+            16
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 28,
+    "fields": {
+        "title": "The last hero",
+        "pages": 412,
+        "price": "546.80",
+        "author": 1,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            1,
+            17
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 29,
+    "fields": {
+        "title": "Nation",
+        "pages": 439,
+        "price": "476.10",
+        "author": 1,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            2
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 30,
+    "fields": {
+        "title": "Guard!Guard!",
+        "pages": 576,
+        "price": "517.40",
+        "author": 1,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            2,
+            4,
+            8
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 31,
+    "fields": {
+        "title": "The theaph of time",
+        "pages": 419,
+        "price": "431.56",
+        "author": 1,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            1
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 32,
+    "fields": {
+        "title": "Snuff",
+        "pages": 319,
+        "price": "214.74",
+        "author": 1,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            5,
+            10
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 33,
+    "fields": {
+        "title": "The truth",
+        "pages": 436,
+        "price": "213.70",
+        "author": 1,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            3
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 34,
+    "fields": {
+        "title": "Moving pictures",
+        "pages": 348,
+        "price": "214.70",
+        "author": 1,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            2,
+            3,
+            9
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 35,
+    "fields": {
+        "title": "Do steaming",
+        "pages": 417,
+        "price": "345.70",
+        "author": 1,
+        "pubdate": "2022-07-23",
+        "publisher": [
+            5
+        ]
+    }
 }
 ]

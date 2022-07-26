@@ -5,13 +5,18 @@
     <title>Books</title>
 </head>
 <body>
-    <h1>Information of price</h1>
-    <ul>Average price of books: {{ avg_price.price__avg}}</ul>
-    <li>Max price of books: {{ max_price.price__max }}</li>
+    <ul><a href="{% url 'catalog:index' %}">Back to main menu</a></ul>
+    <h1>Information of books:</h1>
+    <li>Count of books: {{ info.title__count }}</li>
+    <li>Average price: {{ info.price__avg}}</li>
+    <li>Max price: {{ info.price__max }}</li>
+    <li>Min price: {{ info.price__min }}</li>
+    <li>Max pages: {{ info.pages__max }}</li>
+    <li>Min pages: {{ info.pages__min }}</li>
    <h2>List of books</h2>
    <ul>
         {% for obj in books %}
-            <li><a href="{% url 'catalog:books_info' id=obj.id %}">{{ obj.id }} {{ obj.title }} {{ obj.author }}</a></li>
+            <li><a href="{% url 'catalog:books_info' id=obj.id %}">{{ obj.id }} "{{ obj.title }}" {{ obj.author }}</a></li>
         {% endfor %}
     </ul>
 
