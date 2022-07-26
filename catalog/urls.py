@@ -1,6 +1,7 @@
 from django.urls import path
 
-from .views import authors_list, books_list, index, publishers_list, stores_list, book_info, author_info, publisher_info, stores_info
+from .views import author_info, authors_list, book_info, books_list, index, publisher_info, publishers_list, \
+    stores_info, stores_list
 
 app_name = 'catalog'
 urlpatterns = [
