@@ -1,5 +1,10 @@
 from django.db.models import Avg, Count, Max, Min
 from django.shortcuts import render
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+from django.contrib.messages.views import SuccessMessageMixin
+from django.urls import reverse_lazy
+from django.views import generic
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
 
 from .models import Author, Book, Publisher, Store
@@ -116,3 +121,40 @@ def publisher_info(request, pk):
                    'books': books
                    }
                   )
+
+
+class AuthorCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
+    model = Author
+    fields = ['name', 'surname', 'country']
+    template_name = 'catalog/create_author.html'
+    success_message = "New author was created successfully!"
+    success_url = reverse_lazy('catalog:authors')
+
+
+class AuthorUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
+    model = Author
+    fields = ['name', 'surname', 'country']
+    template_name = 'catalog/update_author.html'
+    success_message = "Profile was updated successfully!"
+    success_url = reverse_lazy('catalog:authors')
+
+
+class AuthorDeleteView(LoginRequiredMixin, SuccessMessageMixin, DeleteView):
+    model = Author
+    fields = ['name', 'surname', 'country']
+    template_name = 'catalog/delete_author.html'
+    success_message = "Profile was deleted successfully!"
+    success_url = reverse_lazy('catalog:authors')
+
+
+class AuthorListView(generic.ListView):
+    model = Author
+    paginate_by = 3
+    template_name = 'catalog/pagination_author.html'
+
+
+class AuthorDetailView(generic.DetailView):
+    model = Author
+    template_name = 'catalog/detail_author.html'
+
+

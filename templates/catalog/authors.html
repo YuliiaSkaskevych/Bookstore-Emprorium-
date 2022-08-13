@@ -13,5 +13,7 @@
             <li><a href="{% url 'catalog:author_info' id=obj.id %}">{{ obj.name }} {{ obj.surname }}</a></li>
         {% endfor %}
     </ul>
+<ul><a href="{% url 'catalog:create_author' %}">Create author</a></ul>
+<ul><a href="{% url 'catalog:pagination_author' %}">Pagination of authors</a></ul>
 </body>
 </html>
